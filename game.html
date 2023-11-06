@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Game</title>
+    <style>
+        body{
+            text-align: center;
+            background-image: none;
+            background-image: url(image.jpg);
+        
+        }
+        button{
+            height: 150px;
+            width: 160px;
+            background-color: rgb(0, 234, 255);
+            
+            
+        }
+        h1{
+            color: springgreen;
+            background-color: rgb(24, 24, 1);
+        }
+    
+       
+
+    </style>
+</head>
+<body>
+    <h1>Stone Paper Scissor Game</h1>
+    <button onclick="
+    const userChoiceMsg='You have chosen Stone';
+    let randomNumber = Math.random()* 3;
+    let computerChoice;
+    if(randomNumber>0 && randomNumber<=1){
+         computerChoice='Stone';
+        //console.log('Computer Choice is Stone')
+    }
+    else if (randomNumber>1 && randomNumber<=2){
+        computerChoice = 'Paper';
+        //console.log('Computer Choice is Paper')
+    }
+    
+    else{
+         computerChoice = 'Scissor';
+        //console.log('Computer Choice is Scissor')
+    }
+    const computerChoiceMsg=`Computer Choice is ${computerChoice}`;
+    if (computerChoice=== 'Scissor'){
+        resultMsg ='User Won';
+    }else if(computerChoice==='Stone'){
+        resultMsg=`It's a  tie.`
+    } else{
+        resultMsg='Computer Won'
+    }
+    alert(`You have chosen Stone. 
+     ${computerChoiceMsg}.
+     ${resultMsg}`);
+
+
+    "
+    >Stone</button>
+    
+    <button onclick="
+    userChoiceMsg='You have chosen Paper';
+    
+    randomNumber = Math.random()* 3;
+    
+    if(randomNumber>0 && randomNumber<=1){
+         computerChoice='Stone';
+        //console.log('Computer Choice is Stone')
+    }
+    else if (randomNumber>1 && randomNumber<=2){
+        computerChoice = 'Paper';
+        //console.log('Computer Choice is Paper')
+    }
+    
+    else{
+         computerChoice = 'Scissor';
+        //console.log('Computer Choice is Scissor')
+    }
+     computerChoiceMsg=`Computer Choice is ${computerChoice}`;
+    if (computerChoice=== 'Scissor'){
+        resultMsg ='Computer Won';
+    }else if(computerChoice==='Paper'){
+        resultMsg=`It's a  tie.`
+    } else{
+        resultMsg='User Won'
+    }
+    alert(`You have chosen Paper. 
+     ${computerChoiceMsg}.
+     ${resultMsg}`);
+    ">Paper</button>
+    
+    
+    <button onclick="
+    userChoiceMsg='You have chosen Scissor';
+    
+    randomNumber = Math.random()* 3;
+    
+    if(randomNumber>0 && randomNumber<=1){
+         computerChoice='Stone';
+        //console.log('Computer Choice is Stone')
+    }
+    else if (randomNumber>1 && randomNumber<=2){
+        computerChoice = 'Paper';
+        //console.log('Computer Choice is Paper')
+    }
+    
+    else{
+         computerChoice = 'Scissor';
+        //console.log('Computer Choice is Scissor')
+    }
+     computerChoiceMsg=`Computer Choice is ${computerChoice}`;
+    if (computerChoice=== 'Scissor'){
+        resultMsg =`It's a tie`;
+    }else if(computerChoice==='Paper'){
+        resultMsg=`User Won`
+    } else{
+        resultMsg='Computer Won'
+    }
+    alert(`You have chosen Scissor. 
+     ${computerChoiceMsg}.
+     ${resultMsg}`);
+    " >Scissor</button>
+
+</body>
+</html>
