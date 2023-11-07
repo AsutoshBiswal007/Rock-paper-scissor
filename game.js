@@ -1,3 +1,11 @@
+let score = {
+    win:0,
+    lost:0,
+    tie:0
+};
+
+
+
 let computerChoice;
 function generateComputerChoice(){
     let randomNumber = Math.random()* 3;

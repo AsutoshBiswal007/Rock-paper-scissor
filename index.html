@@ -46,15 +46,21 @@
     generateComputerChoice();
     const computerChoiceMsg=`Computer Choice is ${computerChoice}`;
     if (computerChoice=== 'Scissor'){
+        score.win ++;
         resultMsg ='User Won';
     }else if(computerChoice==='Rock'){
+        score.tie ++;
         resultMsg=`It's a  tie.`
     } else{
+        score.lost ++;
         resultMsg='Computer Won'
     }
+    console.log(score);
     alert(`You have chosen Rock. 
      ${computerChoiceMsg}.
-     ${resultMsg}`);
+     ${resultMsg}
+     Won: ${score.win}, Lost: ${score.lost}, Tie: ${score.tie}`
+     );
 
 
     "
@@ -66,15 +72,21 @@
    
      computerChoiceMsg=`Computer Choice is ${computerChoice}`;
     if (computerChoice=== 'Scissor'){
+        score.lost++
         resultMsg ='Computer Won';
     }else if(computerChoice==='Paper'){
+        score.tie++
         resultMsg=`It's a  tie.`
     } else{
+        score.win++
         resultMsg='User Won'
     }
+    console.log(score);
     alert(`You have chosen Paper. 
      ${computerChoiceMsg}.
-     ${resultMsg}`);
+     ${resultMsg}
+     Won: ${score.win}, Lost: ${score.lost}, Tie: ${score.tie}
+     `);
     ">Paper</button>
     
     
@@ -84,15 +96,21 @@
     
      computerChoiceMsg=`Computer Choice is ${computerChoice}`;
     if (computerChoice=== 'Scissor'){
+        score.tie++;
         resultMsg =`It's a tie`;
     }else if(computerChoice==='Paper'){
+        score.win++;
         resultMsg=`User Won`
     } else{
+        score.lost++
         resultMsg='Computer Won'
     }
+    console.log(score);
     alert(`You have chosen Scissor. 
      ${computerChoiceMsg}.
-     ${resultMsg}`);
+     ${resultMsg}
+     
+     Won: ${score.win}, Lost: ${score.lost}, Tie: ${score.tie}`);
     " >Scissor</button>
 
 </body>
