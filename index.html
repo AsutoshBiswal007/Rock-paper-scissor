@@ -39,26 +39,26 @@
 </head>
 <body>
     
-    <h1>Stone Paper Scissor Game</h1>
+    <h1>Rock Paper Scissor Game</h1>
     <script src="game.js"></script>
     <button onclick="
-    const userChoiceMsg='You have chosen Stone';
+    const userChoiceMsg='You have chosen Rock';
     generateComputerChoice();
     const computerChoiceMsg=`Computer Choice is ${computerChoice}`;
     if (computerChoice=== 'Scissor'){
         resultMsg ='User Won';
-    }else if(computerChoice==='Stone'){
+    }else if(computerChoice==='Rock'){
         resultMsg=`It's a  tie.`
     } else{
         resultMsg='Computer Won'
     }
-    alert(`You have chosen Stone. 
+    alert(`You have chosen Rock. 
      ${computerChoiceMsg}.
      ${resultMsg}`);
 
 
     "
-    >Stone</button>
+    >Rock</button>
     
     <button onclick="
     userChoiceMsg='You have chosen Paper';
